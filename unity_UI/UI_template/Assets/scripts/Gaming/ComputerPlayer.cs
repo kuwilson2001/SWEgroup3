@@ -17,6 +17,12 @@ public class ComputerPlayer : MonoBehaviour
     {
     }
 
+    public void PlayCard(Card SelectedCard)
+    {
+        //List<Card> playerHand = 
+        //playerHand.Remove(selectedCard);
+        
+    }
     public void PlayRandomCard()
     {
         if (cardDatabase != null && cardDatabase.cardList.Count > 0)
@@ -25,6 +31,7 @@ public class ComputerPlayer : MonoBehaviour
             Card randomCard = cardDatabase.cardList[randomIndex];
 
             // 出牌
+            PlayCard(randomCard);
         }
     }
 }
